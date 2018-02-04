@@ -181,6 +181,38 @@
   </div>
 </template>
 
+<script>
+  const FIREBALL_SIZE = 22;
+  const WIZARD_SPEED = 3;
+  const WIZARD_WIDTH = 70;
+  const FIREBALL_IN_THE_DOWNWIND = 5;
+  const FIREBALL_AGAINST_THE_WIND = 2;
+  const WIZARD_HEGHT = 1.337;
+  const WIZARD_X_POSITION = 350;
+  const WIZARD_Y_POSITION = 100;
+
+  var getFireballSpeed = function (left) {
+    if (left) {
+      return FIREBALL_IN_THE_DOWNWIND;
+    } else {
+      return FIREBALL_AGAINST_THE_WIND;
+    }
+  };
+
+  var getWizardHeight = function () {
+    return WIZARD_HEGHT * WIZARD_WIDTH;
+  };
+
+  function getWizardX(width) {
+    return WIZARD_X_POSITION;
+  }
+
+  function getWizardY(height) {
+    return WIZARD_Y_POSITION;
+  }
+
+</script>
+
 <script src="js/game.js"></script>
 
 </body>
