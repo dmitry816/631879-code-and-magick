@@ -32,7 +32,7 @@ var getMaxElement = function (times) {
   for (var i = 0; i < times.length; i++) {
     var maxElement = times[0];
     if (times[i] > maxElement) {
-      maxElement[i] = times[i];
+      maxElement = times[i];
     }
   }
   return maxElement;
